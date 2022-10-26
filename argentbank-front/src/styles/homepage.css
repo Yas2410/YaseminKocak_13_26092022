@@ -1,0 +1,13 @@
+/*FHOMEPAGE PAGE*/
+.features {
+  display: flex;
+  flex-direction: column;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 920px) {
+  /*Features*/
+  .features {
+    flex-direction: row;
+  }
+}
