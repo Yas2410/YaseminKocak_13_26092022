@@ -16,7 +16,7 @@ root.render(
 );
 
 /*
-Le store est ici un objet JavaScript qui va contenir les différentes
+Le store =  objet JavaScript qui va contenir les différentes
 informations ( de tous les composants) stockées globalement
 Il équivaut à State Global 
 (Magasin qui contient tout l'arbre d'état de l'application React)

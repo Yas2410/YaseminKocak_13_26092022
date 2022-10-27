@@ -8,16 +8,16 @@ import {
 import { combineReducers } from "redux";
 
 //Le REDUCER = Le "cerveau" de Redux
-//C'est une fonction qui va reçevoir le state et
+//C'est une fonction qui va recevoir le state global et
 //une action en paramètre afin de retourner
 //UN NOUVEAU STATE
 
+//STATE INITIAL
 const initialState = {
   firstName: undefined,
   lastName: undefined,
   isLogWrong: false,
 };
-
 const initialStateLog = false;
 
 export function userReducer(state = initialState, action) {
@@ -32,6 +32,8 @@ export function userReducer(state = initialState, action) {
   return state;
 }
 
+//Utilisation du Switch qui va permettre d'alterner le
+//comportement du reducer en fonction du type d'action reçu
 export function logReducer(state = initialStateLog, action) {
   switch (action.type) {
     case LOGIN_SUCCESS:

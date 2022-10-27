@@ -5,6 +5,9 @@ import "../styles/header.css";
 import { logoutSuccess } from "../_store/actions";
 
 export default function Header() {
+  //UseSelector : Hook qui va permettre de récupérer les données
+  // stockées globalement et ce depuis n'importe quel composant
+
   //Authentification de l'utilisateur
   const isUserAuth = useSelector((state) => state.logReducer);
   //On récupère l'identité de l'utilisateur s'il est authentifié
